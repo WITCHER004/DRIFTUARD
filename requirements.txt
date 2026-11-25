@@ -1,0 +1,29 @@
+# DriftGuard Core Runtime Dependencies
+# Recommended Python runtime: 3.12 or 3.13 (evidently 0.7.x uses pydantic.v1 internals unsupported on Python 3.14+)
+
+# Core Data & ML
+numpy>=2.0.0,<3.0.0
+scipy>=1.14.0,<2.0.0
+pandas>=2.2.3,<3.0.0
+pyarrow>=18.0.0,<27.0.0
+scikit-learn>=1.6.0,<2.0.0
+xgboost>=3.0.0,<4.0.0
+joblib>=1.4.0,<2.0.0
+
+# Explainability & Experiment Tracking
+shap>=0.50.0,<1.0.0
+mlflow>=3.18.0,<4.0.0
+
+# Drift Monitoring
+evidently>=0.7.20,<0.8.0
+
+# Inference API & Database
+fastapi>=0.126.0,<1.0.0
+uvicorn[standard]>=0.34.0,<1.0.0
+pydantic>=2.12.0,<3.0.0
+pydantic-settings>=2.7.0,<3.0.0
+sqlalchemy>=2.0.36,<3.0.0
+
+# HTTP Client & Configuration
+httpx>=0.28.1,<1.0.0
+python-dotenv>=1.0.1,<2.0.0

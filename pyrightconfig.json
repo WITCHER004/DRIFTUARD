@@ -1,0 +1,11 @@
+{
+  "venvPath": ".",
+  "venv": ".venv",
+  "include": ["src", "tests", "benchmarks"],
+  "exclude": ["**/__pycache__", ".venv", "data", "models", "mlruns"],
+  "pythonVersion": "3.12",
+  "typeCheckingMode": "standard",
+  "reportMissingParameterType": true,
+  "reportMissingImports": true,
+  "reportMissingTypeStubs": false
+}

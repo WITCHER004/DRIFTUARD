@@ -1,0 +1,55 @@
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Python caches & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environment variables & local secrets
+.env
+.env.*
+!.env.example
+
+# MLflow & SQLite local state
+mlruns/
+mlartifacts/
+mlflow.db*
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Generated datasets, reports & model binaries
+data/*
+!data/raw/
+!data/processed/
+!data/reference/
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/reference/*
+!data/reference/.gitkeep
+models/*
+!models/.gitkeep
+reports/
+*.parquet
+*.csv
+*.pkl
+*.joblib
+*.ubj
+
+# OS / IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
